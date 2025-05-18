@@ -7,3 +7,19 @@ describe('Apple Checkbox Test', () => {
   
     });
   });
+
+  describe('',() =>{
+ cy.visit('url')
+  })
+
+
+  describe('Validate the Contact Us information',()=>{
+    berforeach(()=>{
+  cy.visit('https://techglobal-training.com/frontend/form-elements')
+
+    })
+  it('should display correct Contact Us information', ()=>{
+    cy.contains('h1','Contact Us').should('be.visible')
+  })
+
+  })
