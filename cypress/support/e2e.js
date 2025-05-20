@@ -32,7 +32,7 @@ beforeEach(() => {
 before(() => {
   // exec('node index.js')
   // spawn('node index.js')
-  cy.exec('node index.js')
+  //cy.exec('node index.js')
   // cy.exec('react run')
 })
 

@@ -21,17 +21,17 @@ describe('Test Case 01 - Validate default Book your trip form', () => {
   
     it('Validates the Cabin Class label and dropdown are displayed', () => {
       cy.contains('label', 'Cabin Class').should('be.visible');
-      cy.get('select').eq(2).should('be.visible'); // 3rd dropdown on the form
+      cy.get('select').eq(2).should('be.visible'); 
     });
   
     it('Validates the From label and dropdown are displayed', () => {
       cy.contains('label', 'From').should('be.visible');
-      cy.get('select').eq(0).should('be.visible'); // 1st dropdown on the form
+      cy.get('select').eq(0).should('be.visible'); 
     });
   
     it('Validates the To label and dropdown are displayed', () => {
       cy.contains('label', 'To').should('be.visible');
-      cy.get('select').eq(1).should('be.visible'); // 2nd dropdown on the form
+      cy.get('select').eq(1).should('be.visible');
     });
   
     it('Validates the Depart label and date picker are displayed', () => {
@@ -48,7 +48,7 @@ describe('Test Case 01 - Validate default Book your trip form', () => {
   
     it('Validates Number of passengers label and dropdown are displayed and default to 1', () => {
       cy.contains('label', 'Number of passengers').should('be.visible');
-      cy.get('select').eq(3) // 4th dropdown is Number of passengers
+      cy.get('select').eq(3) 
         .should('be.visible')
         .and('have.value', '1');
     });
@@ -364,7 +364,7 @@ it('Completes booking form and validates booking info for 2 passengers one way',
       cy.contains('Passenger 2: Child (2-11)').should('be.visible');
       cy.contains(/Cabin Class[: ]*Premium Economy/i).should('be.visible');
     });
-})
+
   
   
   
